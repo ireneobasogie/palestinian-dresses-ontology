@@ -1,5 +1,7 @@
 # palestinian-dresses-ontology
 
+A project by Irene Roseline Obasogie (Eirini Rozalia Ompasogkie) and Asil Qraini.
+
 Maybe the first ontology for Palestinian dresses created with Protégé in RDF/OWL structure. 
 
 In this project you'll find an OWL and an XML file with the ontology. If you want to open it to the Protégé programme you should use the OWL file. 
