@@ -1,0 +1,1471 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#"
+     xml:base="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#changeColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#changeColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#hasDistrict -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#hasDistrict">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#District"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#hasGarmentType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#hasGarmentType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#hasGarmentType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#hasOccassion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#hasOccassion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#madeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#madeBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#madeBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tailor"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tailor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#wornBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#wornBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#wornBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#changeColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#backSide -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#backSide">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#motif"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#beadwork -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#beadwork">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#thobeDesign"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Beadwork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#braidwork -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#braidwork">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#thobeDesign"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#buriedIn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#buriedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#chestPanel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#chestPanel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#motif"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#dateMade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#dateMade">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#durability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#durability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#embroideryShape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#embroideryShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#thobeDesign"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#frontSide -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#frontSide">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#motif"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#levelEmbroidery -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#levelEmbroidery">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#thobeDesign"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Intense
+Heavy
+Medium
+Slim</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#material">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#material"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OttomanStripedcloth
+Silk
+Linen
+Cotton
+AbuWardaCloth
+BlueVelvetCloth
+SilkHirmiziCloth
+GoldCords
+SilverCords
+OrangeHirmiziSilk
+Kashmir 
+Lace
+Tifta(Al-Alam)
+Velveteen
+HandLoomedLinen
+Roumi
+Ikhdari</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#materialColors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#materialColors">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#material"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dark Blue
+Indigo
+Black
+Red
+Green
+Orange
+Purple
+Turquoise
+Yellow
+Brown
+Blue 
+White
+Wine-red
+Burgundy
+Pink</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#motif -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#motif">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#neckShoulder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#neckShoulder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#material"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#seasonWorn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#seasonWorn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#sidelinesBanayeq -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#sidelinesBanayeq">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#motif"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#sleeve -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#sleeve">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#thobeDesign"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LargeOpening 
+Slim
+LongPointed
+LargePointed
+WideOpen
+Kumm‘Irdan</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#sleeveCloth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#sleeveCloth">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#material"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#stitchName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#stitchName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#motif"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch
+SatinStitch
+CouchingTahriryStitch
+ManajelStitch
+BanayeqBraidworkStitch
+FeatherStitch
+Stripes
+Stripes
+ChainStitch
+BlanketStitch
+RunningStitch</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#tail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#tail">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#thobeDesign"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#thobeDesign -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#thobeDesign">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim
+Medium
+Wide
+Wide Falujah
+Slim Isdud</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Beadwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Beadwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BullionKnots -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BullionKnots">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#UrbanDistrict"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Desert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Desert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#RuralDistrict"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Village"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#District -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#District"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#ModernDress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#ModernDress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#TraditionalDress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#SyntheticFiber"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#TraditionalDress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#RuralDistrict -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#RuralDistrict">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#District"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#UrbanDistrict"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Season">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Sequins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Sequins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embellishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#SyntheticFiber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#SyntheticFiber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tailor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tailor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#TraditionalDress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#TraditionalDress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#TraditionalDress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GarmentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#UrbanDistrict -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#UrbanDistrict">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#District"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Village -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Village">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#RuralDistrict"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Al-Anbar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Al-Anbar">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#LongOpeningSleevesDress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Al-Jilaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Al-Jilaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hebron"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ceremonies"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Weddings"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy and relatively long embroidery work, topped with Al-Nakhl and Al-Reesh braidwork.</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al-Nakhl, Al-Reesh</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qalayed (necklaces), Floral motifs, Geometrical motifs.</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1903</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waves and Geometrical figures</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patches of triangular shapes of Silk with embroidery of Flowers.</frontSide>
+        <levelEmbroidery>Intense</levelEmbroidery>
+        <material>OttomanStripedcloth, Silk, Linen</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DarkBlue, Indigo</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs, Tallis</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ottoman striped cloth</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rings, Al-reesh beadwork, Floral motifs, Geometrical motifs</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LargeOpening</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patches of HirmiziSilk</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch, SatinStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AlKhader -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AlKhader">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Village"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AlLydd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AlLydd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AlRamla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AlRamla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AnNaqab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AnNaqab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Desert"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BeerSheba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BeerSheba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Village"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BiʾrAasSabʿ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BeerShebaDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BeerShebaDress">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Sab’aawiDress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BeitDajan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BeitDajan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Village"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Others"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Bethlehem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Bethlehem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BiʾrAasSabʿ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BiʾrAasSabʿ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Village"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BlackRoman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BlackRoman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ramallah"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Celebrations"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embroidered Ostrich braidwork, center shows WheatSpike, Feathers motif, Birds</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mawares, Ostrich</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SidePocket</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1913</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bows</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Traditional Mawares braidwork, Ostrich motif</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intense</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cotton, Linen, Silk threads</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black, Orange</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Golden Qasab thick needlework</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manajel (thick braidwork connecting the dress parts) connecting the dress tail to the underarm</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HirmiziSilk</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch, Featherstitch</stitchName>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Celebrations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Celebrations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#CeremonialEventDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#CeremonialEventDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hebron"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Celebrations"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, bottom of the back side has a stitched-in piece of cloth with Blue embroidery of Birds and Flowers</backSide>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bow shaped embroidery, Qalayed (necklaces),  Floral motifs, Tallis</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1933</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bows</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patches of Yellow, Orange and Red Silk triangles, with Kashmir cloth on the sides.</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intense</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silk cloth by special stitch, Linen, Cotton, Kashmir</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DarkBlue, Indigo, Yellow, Orange, Red, Green, Black</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs, Tallis</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silk patches</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flowral motids, Feathers and Manajel (thick braidwork connecting the dress parts)</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy embroidery of Vine Leaves</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch, Featherstitch, SatinStitch, BlanketStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striped embroidery</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ceremonies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ceremonies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DailyUse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DailyUse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Dajani_Dress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Dajani_Dress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Beadwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BeitDajan"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Celebrations"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flowers from two sides with an oval in the center &amp; horizontal briadworks of CypressTrees</backSide>
+        <beadwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lulu</beadwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Square, Tashreefa motif, Opening with a vest slot and Laces.</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1869</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flowers on both ends</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horizontal Lulu beadwork with Flowers</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen, Silk, Cotton, Lace</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black, Orange</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrangeBlossom</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red cloth with a thick Orange Lacing</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soft Floral motifs with Geometrical shapes, surrounded by Laces of Geometrical motifs</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HirmiziSilk</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striped embroidery</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DayDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DayDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Lydda-Al-Ramla"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DailyUse"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special needlework with five partitions inside a rectangular shape</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stripes of Mawares motif, on both sides</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Squared</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1893</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rectangular shape</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mawares, Geometrical motifs</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen, Cotton</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WhiteLinen</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mawares, Lines of motifs</motif>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mawares</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cotton, Linen</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch, ChainStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striped embroidery</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Events -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Events">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Gaza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Gaza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GazaDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#GazaDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Gaza"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Celebrations"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CombLikeTeeth, Talismans, Mawares, CypressTrees</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manajel</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CypressTrees</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1900</dateMade>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen, Cotton</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purple, Turquoise, Indigo</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bow, CombLikeTeeth, Talismans, Mawares, CypressTrees, Wisadeh, Diamond, Scissors, Qeladeh</motif>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bow, comb like teeth, talismans,mawares,cypress trees, wisadeh, diamond, scissors</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rounded V-shaped</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manajel (thick braidwork connecting the dress parts) ,Talismans.</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LongPointed</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two Blue and Purple lines of Linen</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BanayeqBraidworkStitchs</stitchName>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide Falujah, Slim Isdud</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hatta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hatta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Others"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#HeadScarf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#HeadScarf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Others"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#HeavenAndHellDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#HeavenAndHellDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Nablus"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ceremonies"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Weddings"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1873</dateMade>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White Cotton with red, green and thin DarkBlue stripes,  Kashmir</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WhiteLinen, Red, Green, Brown, Orange, Yellow</materialColors>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LargePointed</sleeve>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stripes</stitchName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hebron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hebron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hiribya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hiribya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Village"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ikhdari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ikhdari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Malaq"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AlKhader"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Celebrations"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Events"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four horizontal stripes of the cloth</backSide>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Square, resembles the traditional stitch of MalakDress with floral motifs</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1847</dateMade>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shows the original cloth colors without embroidery</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ikhdari Cloth with Green, Burgundy, Orange and Black stripes, Velveteen</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green, Burgundy, Orange and Black stripes, Pink</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs, Tallis</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pink cloth, connected to the chest panel by a line of Velveteen Russet</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silk cloth connected to the dress by Manajel (thick braidwork connecting the dress parts) with simple Floral motifs embroidery in the bottom.</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LargePointed</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HirmiziSilk</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch, BlanketStitch</stitchName>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Keffiyah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Keffiyah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Others"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#KhaddamehDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#KhaddamehDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Bethlehem"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DailyUse"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometrical motifs</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1925</dateMade>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PlainLinen</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Square</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kumm‘Irdan</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striped embroidery</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#LongOpeningSleevesDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#LongOpeningSleevesDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Bethlehem"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DailyUse"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four thick braidwork of Al-Qasab needle work</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al-Qasab</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bow (Al-Anbar chest panel)</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1903</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striped fabric</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tifta(Al-Alam), Velveteen</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black, Purple, Orange, Red, Green</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bow, Embroidery on the forearm, at the sleeve edge, Geometrical motifs</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velveteen Russet</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LargeOpening</sleeve>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SatinStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striped embroidery</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Lydda-Al-Ramla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Lydda-Al-Ramla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Malaq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Malaq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Bethlehem"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malaq of flower pots, Birds, GoldCords, SilverCords</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1890</dateMade>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striped fabric</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AbuWardaCloth, BlueVelvetCloth, Silk hirmizi cloth, GoldCords, SilverCords, Linen</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stripes of Black, Red, Green and Orange.</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flower pots, Birds, Crosses, Clock, TreeOfLife, Geometric motifs</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silk patches</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clock,  Floral motifs, Crosses, GoldCords, SilverCords</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LargeOpening</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silk patches</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CouchingTahriryStitch, CrossStitch, ManajelStitch, SatinStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#MarriageNightDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#MarriageNightDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Hiribya"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WeddingNight"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stripes of layered Blue and White cloths</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1897</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V shape</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stripes of layered Blue and White cloths</frontSide>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colored Silk dress with multiple colors, mostly Yellow and Red, Blue and White cloths</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red, Yellow, Brown, Blue and White</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometrical motifs</motif>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stripes of layered Blue and White cloths</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stripes</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stripes of layered Blue and White cloths</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Nablus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Nablus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaqabBedouin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaqabBedouin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#AnNaqab"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DailyUse"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CombLikeTeeth, Talismans, Mawares, CypressTrees</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manajel</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Narrow Red Silk</chestPanel>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big patches of embroidery</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen, Cotton, Silk</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indigo</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CypressTrees</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Square</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manajel (thick braidwork connecting the dress parts) and thick horizontal shapes with Talismans.</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silk, Cotton</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RunningStitch, CrossStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One line of Blue embroidery. </tail>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#buriedIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ramallah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ramallah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#RomanWhiteDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#RomanWhiteDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ramallah"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#DailyUse"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs</backSide>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bow,  branches of Flowers</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1880</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Different motifs</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two squares of embroidery with Feathers on the sides</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intense</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HandLoomedLinen, Roumi, natural light-colored Linen or Linen that is almost Black.</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural light-colored, almost Black, Wine-red, Indigo, WhiteLinen</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Floral motifs, Geometrical motifs, PalmTrees, Floral motifs shown on the underarm and on the sleeve end</motif>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</sleeve>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch, Featherstitch</stitchName>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tarbouch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tarbouch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Others"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tubas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tubas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tulkarim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tulkarim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Tailor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#UnmarriedFemale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#UnmarriedFemale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WeddingNight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WeddingNight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Weddings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Weddings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Occassion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WideSleeveDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WideSleeveDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BeerSheba"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BiʾrAasSabʿ"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#UnmarriedFemale"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#UnmarriedFemale"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasha’s Tent motif topped by Geometrical figures and CypressTrees branches, while the bottom back side (tail) has two Blue Lines that go around the dress</backSide>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometrical motifs (fans), Colored slot</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1888</dateMade>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CypressTrees branches with different color shades</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intense</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen, Silk, Cotton</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black, Yellow</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometrical motifs, CypressTrees</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nishan (emblem)</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BanayeqBraidworkStitch with Floral motifs topped by a Maqas motif (scissors)</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WideOpen</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waves that include a Yellow braidwork along the sleeve</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BanayeqBraidworkStitches</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two Blue Lines that go around the dress</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide Falujah, Slim Isdud</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WidowedFemale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WidowedFemale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WidowedWomenDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WidowedWomenDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Braidwork"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Embroidery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#NaturalFiber"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BiʾrAasSabʿ"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WidowedFemale"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#WidowedFemale"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CypressTrees, Feather motifs, Talismans</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flowers</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qalayed (necklaces) motif</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1945</dateMade>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CombLikeTeeth, Talismans, Mawares,CypressTrees</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intense</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cotton, Linen, OrangeHirmiziSilk</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indigo, Black</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CypressTrees, Feathers, Talismans, ,  Flower shapes</motif>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cypress tree and feather, talismans</motif>
+        <neckShoulder rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OrangeHirmiziSilk needle work</neckShoulder>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CypressTrees, Feather motifs, Talismans</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slim</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen, Cotton</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BanayeqBraidworkStitch, Featherstitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One line of Blue embroidery.</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</thobeDesign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Yes">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#buriedIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Sab’aawiDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Sab’aawiDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Thobe"/>
+        <changeColor rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#No"/>
+        <hasDistrict rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#BiʾrAasSabʿ"/>
+        <hasGarmentType rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Belt"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Ceremonies"/>
+        <hasOccassion rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Weddings"/>
+        <madeBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Unknown"/>
+        <wornBy rdf:resource="http://www.semanticweb.org/asilq/ontologies/2023/0/palestinian_dresses#Female"/>
+        <backSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atlas, Moons, Geometrical motifs</backSide>
+        <braidwork rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tashreefa with White and Red colors</braidwork>
+        <buriedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</buriedIn>
+        <chestPanel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aqras (geometrical figures)</chestPanel>
+        <dateMade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1896</dateMade>
+        <embroideryShape rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atlas, Moons, Geometrical figures, CypressTrees</embroideryShape>
+        <frontSide rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intense CypressTrees motif</frontSide>
+        <levelEmbroidery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intense</levelEmbroidery>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen, Cotton</material>
+        <materialColors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</materialColors>
+        <motif rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aqras (geometrical figures), CypressTrees braidwork, Atlas, Moons, Lines, Tashreefa</motif>
+        <sidelinesBanayeq rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CypressTrees</sidelinesBanayeq>
+        <sleeve rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LargePointed</sleeve>
+        <sleeveCloth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linen, Cotton</sleeveCloth>
+        <stitchName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CrossStitch</stitchName>
+        <tail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two lines of Blue embroidery</tail>
+        <thobeDesign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide Falujah, Slim Isdud</thobeDesign>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
